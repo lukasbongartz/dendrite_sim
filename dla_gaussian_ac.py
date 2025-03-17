@@ -140,5 +140,5 @@ samples_dir = os.path.join(os.path.dirname(__file__), "samples")
 os.makedirs(samples_dir, exist_ok=True)
 
 ani = animation.FuncAnimation(fig, update, frames=frames, interval=200, blit=True)
-ani.save(os.path.join(samples_dir, "dla_gaussian_ac.gif"), writer='pillow', fps=20)
+ani.save(os.path.join(samples_dir, "dla_gaussian_ac.gif"), writer='pillow', fps=20, dpi=300)
 plt.close()
